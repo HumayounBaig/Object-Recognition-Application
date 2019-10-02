@@ -14,7 +14,7 @@ eye_cascade = cv2.CascadeClassifier('Haarcascades\haarcascade_eye.xml')
 
 
 font = cv2.FONT_HERSHEY_SIMPLEX
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture(0)  #Opening laptop camera to capture image
 
 while 1:
     ret, img = cap.read()
