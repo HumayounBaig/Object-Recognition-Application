@@ -18,7 +18,7 @@ cap = cv2.VideoCapture(0)  #Opening laptop camera to capture image
 
 while 1:
     ret, img = cap.read()
-    img = cv2.flip(img,90)
+    img = cv2.flip(img,90)  #90 degree camera image flip
     gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
     # gray2 = np.array(gray, 'uint8')
     #faces = face_cascade.detectMultiScale(gray2)
